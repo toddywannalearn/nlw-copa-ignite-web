@@ -9,7 +9,7 @@
       <div class="users">
         <img class="avatars" src="./assets/img/avatares.png" alt="">
         <p class="users_desc">
-          <span class="users__volume">+12.592</span> pessoas já estão usando
+          <span class="users__volume">+{{ users }}</span> pessoas já estão usando
         </p>
       </div>
 
@@ -19,9 +19,10 @@
             class="create-pool__input"
             type="text"
             placeholder="Qual o nome do seu bolão?"
+            #inputPoolName
           />
 
-          <button class="create-pool__btn">CRIAR MEU BOLÃO</button>
+          <button class="create-pool__btn" (click)="createPool(inputPoolName.value)">CRIAR MEU BOLÃO</button>
         </div>
         <p class="instructions">
           Após criar seu bolão, você receberá um código único que poderá usar
@@ -35,7 +36,7 @@
         <div class="info__content">
           <img src="./assets/img/icon.svg" alt="" />
           <div class="info-grid">
-            <p class="info__content--qtd">+2.034</p>
+            <p class="info__content--qtd">+{{ pools }}</p>
             <p class="info__content--desc">Bolões criados</p>
           </div>
         </div>
@@ -45,7 +46,7 @@
         <div class="info__content">
           <img src="./assets/img/icon.svg" alt="" />
           <div class="info-grid">
-            <p class="info__content--qtd">+2.034</p>
+            <p class="info__content--qtd">+{{ guesses }}</p>
             <p class="info__content--desc">Papites enviados</p>
           </div>
         </div>
