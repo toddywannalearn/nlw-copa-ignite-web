@@ -70,7 +70,6 @@ h1 {
 
 .create-pool__input {
     width: 306px;
-    height: 58px;
     padding: 16px 24px;
     background-color: #202024;
     border: 1px solid #323238;
@@ -93,6 +92,14 @@ h1 {
     font-size: 14px;
     line-height: 16px;
     color: #09090a;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: #CFBF5D;
+    }
 }
 
 .instructions {
